@@ -81,7 +81,7 @@ aime24 = LightevalTaskConfig(
     few_shots_split=None,
     few_shots_select=None,
     generation_size=32768,
-    metric=[expr_gold_metric],
+    metric=[expr_gold_metric, mean_length_metric],
     version=1,
 )
 aime25 = LightevalTaskConfig(
@@ -95,7 +95,7 @@ aime25 = LightevalTaskConfig(
     few_shots_split=None,
     few_shots_select=None,
     generation_size=32768,
-    metric=[expr_gold_metric],
+    metric=[expr_gold_metric, mean_length_metric],
     version=1,
 )
 
