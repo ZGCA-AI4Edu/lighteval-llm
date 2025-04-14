@@ -172,3 +172,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# eval scripts
+scripts/*
+!scripts/.gitkeep
+
+# eval results
+results/*
+!results/.gitkeep

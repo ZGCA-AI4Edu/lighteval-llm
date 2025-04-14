@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "lighteval[vllm]>=0.8.1",
+    "lighteval[math,vllm]>=0.8.1",
 ]
 
 [tool.uv]
