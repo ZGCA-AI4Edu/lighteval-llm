@@ -42,3 +42,13 @@ source src/venv/bin/activate
 
 bash eval-examples/eval-math500.sh
 ```
+
+## 🎀 LightEval 一些用法
+
+查看 help 文档：
+
+```bash
+lighteval --help
+
+lighteval vllm --help
+```

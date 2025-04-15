@@ -10,4 +10,5 @@ TASK=aime25
 lighteval vllm $MODEL_ARGS "custom|$TASK|0|0" \
     --custom-tasks src/eval/eval_aime.py \
     --use-chat-template \
-    --output-dir $OUTPUT_DIR
+    --output-dir $OUTPUT_DIR \
+    --save-details

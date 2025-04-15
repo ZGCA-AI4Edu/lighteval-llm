@@ -10,4 +10,5 @@ TASK=gpqa:diamond
 lighteval vllm $MODEL_ARGS "custom|$TASK|0|0" \
     --custom-tasks src/eval/eval_gpqa.py \
     --use-chat-template \
-    --output-dir $OUTPUT_DIR
+    --output-dir $OUTPUT_DIR \
+    --save-details
