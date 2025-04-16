@@ -17,32 +17,12 @@ import numpy as np
 # prompt_fn
 ########################################################
 MATH_QUERY_TEMPLATE = """
-Solve the following math problem efficiently and clearly.  The last line of your response should be of the following format: 'Therefore, the final answer is: $\\boxed{{ANSWER}}$. I hope it is correct' (without quotes) where ANSWER is just the final number or expression that solves the problem. Think step by step before answering.
+Solve the following math problem efficiently and clearly. The last line of your response should be of the following format: 'Therefore, the final answer is: $\\boxed{{ANSWER}}$. I hope it is correct' (without quotes) where ANSWER is just the final number or expression that solves the problem. Think step by step before answering.
 
 {Question}
 
 """.strip()
 
-DETAILED_QUERY_TEMPLATE = """
-Answer the problem with a detailed thinking process:
-
-{Question}
-
-""".strip()
-
-BRIEF_QUERY_TEMPLATE = """
-Answer the problem with a brief thinking process:
-
-{Question}
-
-""".strip()
-
-MIDDLE_QUERY_TEMPLATE = """
-Answer the problem with a appropriate (between detailed and brief) thinking process:
-
-{Question}
-
-""".strip()
 
 def math500_prompt_fn(line, task_name: str = None):
     """Defines how to go from a dataset line to a doc object.
